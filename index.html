@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Jay Kushwaha - Embedded Systems Engineer. Specializing in IoT, firmware development, RTOS, PCB design, and real-time automation.">
+    <title>Jay Kushwaha | Embedded Systems Engineer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Jay.<span>Dev</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Open Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <ul class="drawer-links">
+            <li><a href="#about" class="drawer-link">About</a></li>
+            <li><a href="#experience" class="drawer-link">Experience</a></li>
+            <li><a href="#projects" class="drawer-link">Projects</a></li>
+            <li><a href="#skills" class="drawer-link">Skills</a></li>
+            <li><a href="#contact" class="drawer-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <!-- Interactive Particle Canvas Background -->
+        <canvas id="hero-canvas"></canvas>
+        
+        <div class="hero-content">
+            <p class="hero-subtitle">Hello World, I'm</p>
+            <h1 class="hero-title">Jay Kushwaha</h1>
+            <h2 class="hero-tagline">Embedded Systems Engineer</h2>
+            <p class="hero-description">
+                I bridge the gap between hardware and software. Specializing in microcontrollers (ESP-32/Arduino), firmware development in C/C++, Real-Time Operating Systems (RTOS), and PCB layout design to build intelligent, connected systems.
+            </p>
+            
+            <div class="hero-ctas">
+                <a href="#projects" class="btn btn-primary">View Projects <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+
+            <div class="hero-socials">
+                <a href="https://linkedin.com/in/jay-kushwaha-7a50002a8" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/jaykushwaha108" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:jaykushwaha800@gmail.com" class="social-icon" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+917909381294" class="social-icon" aria-label="Phone">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="scroll-down">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- About & Education Section -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About & Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-info">
+                        <h3 class="about-heading">Developing Smart Solutions for the Physical World</h3>
+                        <p class="about-text">
+                            I am a passionate Embedded Systems Engineer with a solid foundation in Electrical and Electronics Engineering. I enjoy designing circuit schematics, routing PCBs, and programming microcontrollers to breathe life into hardware.
+                        </p>
+                        <p class="about-text">
+                            With hands-on experience in cloud monitoring (ThingSpeak), real-time weather stations, and automation devices, I excel at troubleshooting hardware and implementing robust software solutions.
+                        </p>
+                        
+                        <div class="personal-details">
+                            <div class="detail-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Gohalpur, Jabalpur, Madhya Pradesh, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>jaykushwaha800@gmail.com</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>+91 79093 81294</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-timeline">
+                        <h3 class="timeline-title"><i class="fa-solid fa-graduation-cap"></i> Academic Timeline</h3>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2020 - 2024</div>
+                                <h4 class="timeline-heading">B.Tech in Electrical and Electronics</h4>
+                                <p class="timeline-sub">Hitkarni College Of Engineering And Technology</p>
+                                <p class="timeline-desc">Jabalpur, M.P. | CGPA: <strong>7.78</strong></p>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2020</div>
+                                <h4 class="timeline-heading">Higher Secondary (HSC)</h4>
+                                <p class="timeline-sub">D N Jain High Secondary School Golbazar</p>
+                                <p class="timeline-desc">Jabalpur, M.P. | Percentage: <strong>56.8%</strong></p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2017</div>
+                                <h4 class="timeline-heading">Secondary School (SSC)</h4>
+                                <p class="timeline-sub">GOVT HS School Tamarhai</p>
+                                <p class="timeline-desc">Jabalpur, M.P. | Percentage: <strong>70.5%</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="section experience-section alt-bg" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="exp-role-company">
+                            <h3 class="role">Embedded Systems Engineer</h3>
+                            <h4 class="company"><i class="fa-solid fa-building"></i> AIMS Interactive Pvt Ltd</h4>
+                        </div>
+                        <div class="exp-meta">
+                            <span class="badge badge-primary"><i class="fa-solid fa-calendar"></i> Aug 2025 - Present</span>
+                            <span class="location"><i class="fa-solid fa-location-dot"></i> Jabalpur, M.P., India</span>
+                        </div>
+                    </div>
+                    
+                    <div class="experience-body">
+                        <p class="exp-summary">
+                            Responsible for designing, programming, and deploying microcontrollers and industrial monitoring hardware.
+                        </p>
+                        <ul class="exp-list">
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Developed and optimized embedded firmware for real-time monitoring and automation systems.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Performed thorough hardware-in-the-loop (HIL) firmware testing, board-level debugging, and hardware-software integration.</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <span>Supported schematic capture, rapid prototyping, troubleshooting, and field deployment of industrial embedded solutions.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects Showcase</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-seedling"></i></div>
+                            <span class="project-date">June 2024</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Farming System</h3>
+                            <p class="project-text">
+                                Developed an ESP-32 based intelligent farming solution equipped with automated drip irrigation, environmental sensors, and live telemetry uploaded to ThingSpeak Cloud. Enables farmers to monitor and control crop fields remotely.
+                            </p>
+                            <div class="project-tech">
+                                <span>C++</span>
+                                <span>ESP-32</span>
+                                <span>ThingSpeak</span>
+                                <span>MATLAB</span>
+                                <span>IoT</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-solar-panel"></i></div>
+                            <span class="project-date">Jan 2025</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Solar MPPT Charge Controller</h3>
+                            <p class="project-text">
+                                Designed an ESP32-controlled Maximum Power Point Tracking (MPPT) solar charger. Maximizes power harvest from PV panels under changing sunlight profiles and regulates high-efficiency battery charging profiles.
+                            </p>
+                            <div class="project-tech">
+                                <span>C++</span>
+                                <span>ESP32</span>
+                                <span>Analog Electronics</span>
+                                <span>MPPT Algorithm</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon"><i class="fa-solid fa-cloud-sun-rain"></i></div>
+                            <span class="project-date">Jan 2025</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Real-Time Weather Monitoring</h3>
+                            <p class="project-text">
+                                Built an ESP32/ESP8266-based meteorological logging device. Reads environmental data (Temperature, Humidity, Pressure) via sensors and serves a local, highly-optimized interactive web page dashboard using HTML/CSS/JS.
+                            </p>
+                            <div class="project-tech">
+                                <span>C++</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>ESP32 Server</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Courses Section -->
+        <section class="section skills-section alt-bg" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Core Skills -->
+                    <div class="skills-card">
+                        <h3 class="skills-title"><i class="fa-solid fa-layer-group"></i> Specialized Skills</h3>
+                        <div class="skills-list">
+                            <div class="skill-category">
+                                <h4>Programming Languages</h4>
+                                <div class="skill-badges">
+                                    <span class="skill-badge"><i class="fa-solid fa-code"></i> C / C++</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-microchip"></i> Embedded C</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Hardware Design & Simulation Tools</h4>
+                                <div class="skill-badges">
+                                    <span class="skill-badge"><i class="fa-solid fa-compass-drafting"></i> KiCad</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-laptop-code"></i> Proteus</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-terminal"></i> VS Code</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-circle-nodes"></i> Arduino IDE</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> MATLAB</span>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Technologies & Standards</h4>
+                                <div class="skill-badges">
+                                    <span class="skill-badge"><i class="fa-solid fa-microchip"></i> RTOS (Real-Time OS)</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-bezier-curve"></i> PCB Layout Design</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-wifi"></i> IoT Protocols (MQTT/HTTP)</span>
+                                    <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-wave-square"></i> Digital Electronics</span>
+                                    <span class="skill-badge"><i class="fa-solid fa-bolt"></i> Analog Circuits</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Courses & Certifications -->
+                    <div class="courses-card">
+                        <h3 class="skills-title"><i class="fa-solid fa-certificate"></i> Courses & Certifications</h3>
+                        <div class="courses-timeline">
+                            <div class="course-item">
+                                <div class="course-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="course-info">
+                                    <h4>Embedded System Certification</h4>
+                                    <p class="course-provider">National Institute of Electronics & IT (NIELIT)</p>
+                                    <span class="course-date">January 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <div class="course-icon"><i class="fa-solid fa-cubes"></i></div>
+                                <div class="course-info">
+                                    <h4>VLSI Design Certification</h4>
+                                    <p class="course-provider">National Institute of Electronics & IT (NIELIT)</p>
+                                    <span class="course-date">January 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <div class="course-icon"><i class="fa-solid fa-chart-bar"></i></div>
+                                <div class="course-info">
+                                    <h4>MATLAB Programming Certification</h4>
+                                    <p class="course-provider">National Institute of Electronics & IT (NIELIT)</p>
+                                    <span class="course-date">January 2024</span>
+                                </div>
+                            </div>
+
+                            <div class="course-item">
+                                <div class="course-icon"><i class="fa-solid fa-plane"></i></div>
+                                <div class="course-info">
+                                    <h4>Technical Training Program</h4>
+                                    <p class="course-provider">Airport Authority Of India (AAI)</p>
+                                    <span class="course-date">July 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h3 class="contact-heading">Let's build something together!</h3>
+                        <p class="contact-desc">
+                            Whether you want to discuss a new IoT device, firmware logic, PCB layouts, or job opportunities – feel free to drop a message!
+                        </p>
+                        
+                        <div class="info-links">
+                            <a href="mailto:jaykushwaha800@gmail.com" class="info-link-card">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-text">
+                                    <span>Email Me</span>
+                                    <strong>jaykushwaha800@gmail.com</strong>
+                                </div>
+                            </a>
+
+                            <a href="tel:+917909381294" class="info-link-card">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="info-text">
+                                    <span>Call / WhatsApp</span>
+                                    <strong>+91 79093 81294</strong>
+                                </div>
+                            </a>
+
+                            <div class="info-link-card">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-text">
+                                    <span>Location</span>
+                                    <strong>Jabalpur, Madhya Pradesh, India</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" id="name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Your Email</label>
+                                    <input type="email" id="email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" required placeholder="Project discussion">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" required rows="5" placeholder="Write your message here..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="form-success" class="form-success-msg hidden">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h3>Message Sent Successfully!</h3>
+                            <p>Thank you, Jay will get back to you shortly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; 2026 Jay Kushwaha. All Rights Reserved.</p>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/jay-kushwaha-7a50002a8" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/jaykushwaha108" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:jaykushwaha800@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
